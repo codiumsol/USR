@@ -13,11 +13,30 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0;
 }
 
+.form-style input, .form-style select{
+  height: 40px;
+  background-color: #EEEEEECC !important;
+  border: none !important;
+  font-family: Inter;
+font-size: 12px !important;
+font-weight: 400 !important;
+line-height: 16px !important;
+ 
+}
+.form-label{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+margin-top: 10px;
+
+}
 /* Sidebar styles */
 #side_nav {
   background: #FFFFFF;
-  min-width: 313px;
-  max-width: 313px;
+  min-width: 250px;
+  max-width: 250px;
   height: 100vh; /* Full viewport height */
   transition: all 0.3s;
   position: fixed; /* Fixed sidebar */
@@ -29,8 +48,8 @@ h1, h2, h3, h4, h5 {
 }
 #Leftside_nav {
   background: #FFFFFF;
-  min-width: 313px;
-  max-width: 313px;
+  min-width: 340px;
+  max-width: 340px;
   height: 100vh; /* Full viewport height */
   transition: all 0.3s;
   position: fixed; /* Fixed sidebar */
@@ -42,8 +61,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
-  margin-left: 313px; /* Ensure content doesn't overlap the sidebar */
-  width: calc(100% - 313px); /* Adjust width based on sidebar */
+  margin-left: 250px; /* Ensure content doesn't overlap the sidebar */
+  width: calc(100% - 250px); /* Adjust width based on sidebar */
   min-height: 100vh;
   padding: 20px; /* Add some padding */
   overflow-y: auto; /* Make content scrollable */
@@ -57,7 +76,7 @@ h1, h2, h3, h4, h5 {
 
 
 .sidebar li.active {
-  background: #27AAE1;
+  background: #3F46EE;
   border-radius: 8px;
 }
 
@@ -80,8 +99,8 @@ margin-bottom: 4px;
 }
 
 .header-box, .list-unstyled {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .sidebar-model-button {
@@ -95,8 +114,8 @@ margin-bottom: 4px;
 }
 
 .list-unstyled-bootom {
-  padding-left: 12px;
-  padding-right: 12px;
+  /* padding-left: 12px;
+  padding-right: 12px; */
   align-items: center;
   display: flex;
   margin-top: auto; /* Pushes the profile section to the bottom */
@@ -124,11 +143,11 @@ margin-bottom: 4px;
   stroke: white !important; /* Change to white for active icon */
 }
 .sidebar li.active {
-  background: #27AAE1;
+  background: #3F46EE;
   border-radius: 8px;
 }
 .sidebar li a:hover{
-  background: #27AAE1;
+  background: #3F46EE;
   color: white;
   border-radius: 8px;
 
@@ -138,19 +157,8 @@ margin-bottom: 4px;
   stroke: white !important; /* Change stroke color to white on hover */
 }
 
-
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none; 
-  z-index: 10; 
-} */
 #Leftside_nav {
-  margin-right: -313px;
+  margin-right: -340px;
   /* position: absolute; */
   min-height: 100vh;
   z-index: 1;
@@ -159,8 +167,83 @@ margin-bottom: 4px;
   margin-right: 0;
 }
 .content-right-margin {
-  margin-right: 313px;
+  margin-right: 340px;
 }
+.sidebar-toggle button{
+  background-color: #b5d0dd !important;
+  border: 1px solid #3F46EE;
+  margin-left: 10px;
+ 
+}
+.page-heading-top-button button{
+  margin-left: 10px;
+
+}
+.page-heading{
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  
+
+}
+.form-card-style{
+  border: none;
+
+}
+.add-label-right{
+  float: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;  
+  margin-top: 9px;
+}
+
+
+.black-th{
+  width: 45%;
+}
+.Starting-backeg-style tr td, th{
+text-align: center;
+}
+
+.tabel-style th, td{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.52px;
+
+
+}
+.accordion-button:not(.collapsed){
+  background: none !important;
+  box-shadow: none !important;
+}
+.accordion-button{
+  font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 16.94px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .................................... */
+
 
 /* Mobile view adjustments */
 @media (max-width: 1000px) {
@@ -179,7 +262,7 @@ margin-bottom: 4px;
     margin-right: 0;
   }
   #Leftside_nav {
-    margin-right: -313px;
+    margin-right: -340px;
     /* position: absolute; */
     min-height: 100vh;
     z-index: 1;
