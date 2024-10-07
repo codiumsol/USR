@@ -1,4 +1,12 @@
 /* General styles */
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +53,7 @@ margin-top: 10px;
   overflow-y: auto; /* Scrollable sidebar */
   display: flex;
   flex-direction: column; /* Allow flex layout for content positioning */
+  z-index: 8;
 }
 #Leftside_nav {
   background: #FFFFFF;
@@ -170,7 +179,7 @@ margin-bottom: 4px;
   margin-right: 340px;
 }
 .sidebar-toggle button{
-  background-color: #b5d0dd !important;
+  background-color: rgba(63, 70, 238, 0.1) !important;
   border: 1px solid #3F46EE;
   margin-left: 10px;
  
@@ -206,19 +215,31 @@ margin-bottom: 4px;
   width: 45%;
 }
 .Starting-backeg-style{
-  border-radius: 25px;
+  border-radius: 10px;
 }
 .accordion-item{
-  border-radius: 25px !important;
+  border-radius: 10px !important;
   border: none !important;
+  margin-bottom: 45px;
 
+}
+.accordion{
+  background-color: #f8f9fa;
+}
+.accordion-button{
+  border-radius: 7px;
 }
 .table-left-corner{
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 10px;
 }
 .table-right-corner{
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 10px;
 
+}
+.accordion-button::after {
+  width: 18px !important;
+  height: 13px !important;
+  background-size:unset !important;
 }
 .Starting-backeg-style tr td, th{
 text-align: center;
@@ -244,10 +265,43 @@ line-height: 16.94px;
 
 }
 
-
-
-
-
+.tbody, td, tfoot, th, thead, tr{
+  border-top: 1px solid #E1DFF2 ;
+}
+.leftsidebar{
+  padding: 15px
+}
+.leftsidebar ul{
+  padding-left: 0;
+}
+.leftsidebar ul li {
+  font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.52px;
+text-align: left;
+list-style: none;
+}
+.leftsidebar h3{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.36px;
+text-align: left;
+margin-bottom: 15px;
+}
+.leftsidebar button{
+  background: rgb(118, 121, 221);
+  color: rgba(63, 70, 238, 1);
+  
+}
+.leftsidebar button:hover{
+  background:  rgba(63, 70, 238, 1);
+color: white;
+}
+.offcanvas-backdrop{
+  z-index: 4 !important;
+}
 
 
 
