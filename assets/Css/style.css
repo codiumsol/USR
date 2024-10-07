@@ -205,6 +205,21 @@ margin-bottom: 4px;
 .black-th{
   width: 45%;
 }
+.Starting-backeg-style{
+  border-radius: 25px;
+}
+.accordion-item{
+  border-radius: 25px !important;
+  border: none !important;
+
+}
+.table-left-corner{
+  border-bottom-left-radius: 25px;
+}
+.table-right-corner{
+  border-bottom-right-radius: 25px;
+
+}
 .Starting-backeg-style tr td, th{
 text-align: center;
 }
@@ -228,6 +243,7 @@ font-weight: 700;
 line-height: 16.94px;
 
 }
+
 
 
 
