@@ -279,6 +279,7 @@ line-height: 16.94px;
 font-size: 12px;
 font-weight: 500;
 line-height: 14.52px;
+padding-top: 8px;
 text-align: left;
 list-style: none;
 }
@@ -303,6 +304,105 @@ color: white;
   z-index: 4 !important;
 }
 
+.datepicker-inline {
+  width: 100% !important;
+}
+.table-condensed{
+  width: 100%;
+}
+
+.table-condensed .tbody, td, tfoot, th, thead, tr{
+  border: none;
+}
+.datepicker td, .datepicker th{
+  width: 32px;
+  height: 43px;
+  border-radius: 100px;
+}
+
+.offcanvas{
+  width: 340px !important;
+}
+
+
+.datepicker  .dow, .datepicker-switch{
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: center;
+color: #6D6F73;  
+}
+
+
+.Calendar-calss{
+  font-family: Inter;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.36px;
+text-align: center;
+
+}
+.offcanvas-body .Starting-backeg-style tr td, th{
+text-align: left;
+}
+.offcanvas-body .Events{
+
+border: 1px solid #6D6F73 !important;
+padding: 10px;
+border-radius: 15px;
+margin-bottom: 15px;
+}
+.calendar-event-style h3{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+  margin-top: 15px;
+  
+}
+.calendar-event-style .Events p{
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.1px;
+  text-align: left;
+  
+}
+.value-data p{
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.1px;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #6D6F73;
+
+}
+.calendar-event-style a{
+  font-family: Inter;
+font-size: 12px;
+font-weight: 600;
+line-height: 14.52px;
+color: #3F46EE;
+text-decoration: none;
+}
+.offcanvas-button button{
+  position: relative;
+  top: 26px;
+  left: -55px;
+background-image: url(../Images/cancel.png)!important;
+background-repeat: no-repeat !important;
+width: 44px;
+height: 44px;
+background: none;
+opacity: 1;
+}
+
+.offcanvas-button{
+}
 
 
 
