@@ -19,6 +19,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css" />
+
 </head>
 
 <body>
@@ -524,12 +528,12 @@
               </h2>
               <div id="collapseOne2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body p-0">
+                  <div class="row">
+                    <form action="">
+                      <div class="table-responsive tabel-style">
 
-                  <form action="">
-                    <div class="table-responsive tabel-style">
-
-                      <table class="table  table-borderless align-middle table-hover mb-0 ">
-                        <tr class="table-secondary">
+                        <table class="table  table-borderless align-middle table-hover mb-0 " id="StartingPackage">
+                        <thead> <tr class="table-secondary">
                           <th class="text-start black-th ">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -546,94 +550,99 @@
 
 
                         </tr>
-                        <tr>
-                          <td class="text-start ">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Professional DJ/Host
-                              </label>
-                            </div>
-                          </td>
-                          <td>0</td>
-                          <td>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected>0</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </td>
-                          <td>0</td>
-                          <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
-                        </tr>
-                        <tr>
-                          <td class="text-start ">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Professional DJ/Host
-                              </label>
-                            </div>
-                          </td>
-                          <td>0</td>
-                          <td>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected>0</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </td>
-                          <td>0</td>
-                          <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
-                        </tr>
-                        <tr>
-                          <td class="text-start ">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Professional DJ/Host
-                              </label>
-                            </div>
-                          </td>
-                          <td>0</td>
-                          <td>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected>0</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </td>
-                          <td>0</td>
-                          <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
-                        </tr>
-                        <tr>
-                          <td class="text-start table-left-corner ">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                                Professional DJ/Host
-                              </label>
-                            </div>
-                          </td>
-                          <td>0</td>
-                          <td>
-                            <select class="form-select" aria-label="Default select example">
-                              <option selected>0</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </td>
-                          <td>0</td>
-                          <td class="table-right-corner"><a href=""><img src="assets/Images/note.png" alt="icon"></a>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </form>
+                      
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-start ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Professional DJ/Host
+                            </label>
+                          </div>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>0</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </td>
+                        <td>0</td>
+                        <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Professional DJ/Host
+                            </label>
+                          </div>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>0</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </td>
+                        <td>0</td>
+                        <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Professional DJ/Host
+                            </label>
+                          </div>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>0</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </td>
+                        <td>0</td>
+                        <td><a href=""><img src="assets/Images/note.png" alt="icon"></a></td>
+                      </tr>
+                      <tr>
+                        <td class="text-start table-left-corner ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Professional DJ/Host
+                            </label>
+                          </div>
+                        </td>
+                        <td>0</td>
+                        <td>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>0</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </td>
+                        <td>0</td>
+                        <td class="table-right-corner"><a href=""><img src="assets/Images/note.png" alt="icon"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                        </table>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -700,6 +709,21 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script> -->
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+
+
+    <script>
+      $(document).ready(function() {
+          $('#StartingPackage').DataTable();
+          $('#StartingPackage').parent().hide();
+          $('#example_info').parent() .parent() .hide();
+  
+      });
+  </script>
 </body>
 
 </html>
