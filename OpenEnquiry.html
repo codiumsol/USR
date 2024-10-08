@@ -317,21 +317,31 @@
                                             }
 
                                             .notes-li::before {
-                                                content: url('assets/Images/notes-circle-line.png');
+                                                /*content: url('assets/Images/notes-circle-line.png');*/
+                                                content: url('assets/Images/notes-circle.png');
                                                 display: inline-block;
                                                 margin-right: 8px;
                                                 vertical-align: middle;
                                                 height: 20px;
+                                                position: relative;
+                                                left: -8px;
+                                                top: -9px;
                                             }
 
-                                            .notes-li:last-child::before {
-                                                content: url('assets/Images/notes-circle.png');
-                                                display: inline-block;
-                                                margin-right: 8px;
-                                                vertical-align: unset;
-                                            }
+                                            /*.notes-li:last-child::before {*/
+                                            /*    content: url('assets/Images/notes-circle.png');*/
+                                            /*    display: inline-block;*/
+                                            /*    margin-right: 8px;*/
+                                            /*    vertical-align: unset;*/
+                                            /*}*/
                                             .radius{
                                                 border-radius: 10px;
+                                            }
+                                            .notes-li-border-left{
+                                                border-left: 2px solid blue;
+                                            }
+                                            .ps-6{
+                                                padding-left: 3px;
                                             }
 
                                         </style>
@@ -343,38 +353,38 @@
 
                                 <div class="card pr-2 pl-2 pb-2" id="notes-list">
                                     <div class="text-start">
-                                        <ul class="list-unstyled ps-2 pt-1">
+                                        <ul class="list-unstyled p-3 pt-2">
 
-                                            <li class="d-flex">
-                                                <span class="notes-li pe-2"></span>
-                                                <span>Update email sent - USR Holding Ltd - Created on 15/07/2024, 5:06
+                                            <li class="d-flex  notes-li-border-left" >
+                                                <span class=" notes-li" ></span>
+                                                <span class="">Update email sent - USR Holding Ltd - Created on 15/07/2024, 5:06
                                                     pm
                                                 </span>
                                             </li>
 
 
-                                            <li class="d-flex">
-                                                <span class="notes-li"></span>
+                                            <li class="d-flex notes-li-border-left">
+                                                <span class=" notes-li" ></span>
                                                 <span>Update email sent - Created on 20/05/2024, 3:10
                                                 pm</span>
                                             </li>
 
 
-                                            <li class="d-flex">
-                                                <span class="notes-li"></span>
-                                                <span>Brochure email sent - Created on 30/04/2024, 12:59
+                                            <li class="d-flex notes-li-border-left">
+                                                <span class=" notes-li" ></span>
+                                                <span >Brochure email sent - Created on 30/04/2024, 12:59
                                                 PM</span>
                                             </li>
 
 
-                                            <li class="d-flex">
-                                                <span class="notes-li"></span>
-                                                <span>Brochure email sent - Created on 30/04/2024, 12:59
+                                            <li class="d-flex notes-li-border-left">
+                                                <span class=" notes-li" ></span>
+                                                <span >Brochure email sent - Created on 30/04/2024, 12:59
                                                 PM</span>
                                             </li>
-                                            <li class="d-flex notes-li">
-                                                <span></span>
-                                                <span>Brochure email sent - Created on 30/04/2024, 12:59
+                                            <li class="d-flex ">
+                                                <span class=" notes-li ps-6" ></span>
+                                                <span >Brochure email sent - Created on 30/04/2024, 12:59
                                                 PM</span>
                                             </li>
                                         </ul>
