@@ -34,6 +34,14 @@ $(".sidebar ul li").on('click', function () {
         });
         
 
+        $(document).ready(function () {
+            $('#datepicker').datepicker({
+              format: "dd/mm/yyyy",
+              todayHighlight: true,
+              autoclose: true
+            });
+          });
+
 
 
       

@@ -2,29 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>USR</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>USR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" />
-
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/4d5fe89baa.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/4d5fe89baa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
 
-    <link rel="stylesheet" href="assets/Css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css" />
+
+<!-- ............................../.datepicker css link..................... -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+<link rel="stylesheet" href="assets/Css/style.css" />
 
 </head>
 
@@ -40,7 +42,7 @@
             </div>
 
             <ul class="list-unstyled">
-                <li class="active">
+                <li >
                     <a href="Index.html" class="nav-side-link">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -77,7 +79,7 @@
                         New Enquiry
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="OpenEnquiry.html" class="nav-side-link">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -308,7 +310,33 @@
                         </div>
                     </div>
                     <div class="offcanvas-body">
-                        ...
+                        <h3 class="text-center Calendar-calss">Calendar</h3>
+                        <div id="datepicker"></div>
+                       <div class="calendar-event-style">
+                         <a href="">Go to calendar</a>
+                         <h3>Upcoming Events</h3>
+                         <div class="d-flex justify-content-between align-items-center  value-data">
+                           <p class=" ">Date</p>
+                           <p class="">Venue</p>
+                           <p class="">Date</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">Name</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">DJ Nicku</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">DJ Nicku</p>           
+                         </div>
+           
+                       </div>
                     </div>
                 </div>
                 <!-- offcanvas right sidebar end -->
@@ -328,8 +356,10 @@
                         <h2 class="fs-5 page-heading pb-0">Open Enquiry</h2>
                     </div>
 
-                    <div class="page-heading-top-button text-end">
-                        <a href="#" class="btn btn-outline-primary top-nav-btn" data-bs-toggle="modal"
+                    <div class="page-heading-top-button d-flex text-end">
+                        <div class="d-none d-lg-block">
+
+                            <a href="#" class="btn btn-outline-primary top-nav-btn" data-bs-toggle="modal"
                             data-bs-target="#">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -347,7 +377,7 @@
                                     stroke-linejoin="round" />
                             </svg>
                             Send Brochure
-                        </a>
+                            </a>
                         <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
                             data-bs-target="#">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -415,6 +445,8 @@
                         <a href="#" class="btn btn-primary ms-2">
                             <i class="fa-regular fa-paper-plane"></i> Send Quote
                         </a>
+                        </div>
+
                         <!-- ...............rigth side icon button. -->
                         <span class="sidebar-toggle">
                             <button class="btn " type="button" data-bs-toggle="offcanvas"
@@ -447,110 +479,49 @@
 
 
 
-            <!-- offcanvas right sidebar -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5> -->
-                    <!-- <img src="assets/Images/Logo.png" alt="Logo" class="offcanvas-title img-fluid" /> -->
-                    <div class="offcanvas-search-bar input-group">
-                        <input type="text" class="form-control" placeholder="Search event" aria-label="Username"
-                            aria-describedby="addon-wrapping">
-                        <i class="fal fa-magnifying-glass"></i>
-                    </div>
-                    <div class="close-btn">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="offcanvas-body">
-                    ...
-                </div>
-                <!-- offcanvas right sidebar end -->
-            </div>
+            
 
             <!-- main content -->
             <div class="main-content">
                 <!-- mobile view buttons -->
-                <div class="top-mobile-buttons d-md-none">
+                <div class="top-mobile-buttons d-lg-none">
                     <div class="row m-0">
                         <div class="col-6 p-0 left">
                             <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.5 9.75V4.5C16.5 4.10218 16.342 3.72064 16.0607 3.43934C15.7794 3.15804 15.3978 3 15 3H3C2.60218 3 2.22064 3.15804 1.93934 3.43934C1.65804 3.72064 1.5 4.10218 1.5 4.5V13.5C1.5 14.325 2.175 15 3 15H9"
-                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M16.5 5.25L9.7725 9.525C9.54095 9.67007 9.27324 9.74701 9 9.74701C8.72676 9.74701 8.45905 9.67007 8.2275 9.525L1.5 5.25"
-                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M14.25 12V16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M12 14.25H16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span>New Enquiry</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <path d="M16.5 9.75V4.5C16.5 4.10218 16.342 3.72064 16.0607 3.43934C15.7794 3.15804 15.3978 3 15 3H3C2.60218 3 2.22064 3.15804 1.93934 3.43934C1.65804 3.72064 1.5 4.10218 1.5 4.5V13.5C1.5 14.325 2.175 15 3 15H9" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.5 5.25L9.7725 9.525C9.54095 9.67007 9.27324 9.74701 9 9.74701C8.72676 9.74701 8.45905 9.67007 8.2275 9.525L1.5 5.25" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.25 12V16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 14.25H16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <span>Send Brochure</span>
                             </a>
                         </div>
                         <div class="col-6 p-0 right">
                             <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_105_15030)">
-                                        <path
-                                            d="M15.9 6.3C16.275 6.585 16.5 7.0275 16.5 7.5V15C16.5 15.3978 16.342 15.7794 16.0607 16.0607C15.7794 16.342 15.3978 16.5 15 16.5H3C2.60218 16.5 2.22064 16.342 1.93934 16.0607C1.65804 15.7794 1.5 15.3978 1.5 15V7.5C1.5 7.26713 1.55422 7.03746 1.65836 6.82918C1.7625 6.6209 1.91371 6.43972 2.1 6.3L8.1 1.8C8.35964 1.60527 8.67544 1.5 9 1.5C9.32456 1.5 9.64036 1.60527 9.9 1.8L15.9 6.3Z"
-                                            stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M16.5 7.5L9.7725 11.775C9.54095 11.9201 9.27324 11.997 9 11.997C8.72676 11.997 8.45905 11.9201 8.2275 11.775L1.5 7.5"
-                                            stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_105_15030">
-                                            <rect width="18" height="18" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <span>Open Enquiries</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M16.3805 5.1088C16.777 4.71236 16.9998 4.17465 16.9999 3.61394C16.9999 3.05323 16.7773 2.51545 16.3808 2.11892C15.9844 1.72239 15.4467 1.49958 14.886 1.49951C14.3253 1.49944 13.7875 1.72212 13.391 2.11855L3.38145 12.1303C3.20732 12.3039 3.07854 12.5177 3.00645 12.7528L2.0157 16.0168C1.99632 16.0817 1.99485 16.1506 2.01146 16.2162C2.02807 16.2818 2.06214 16.3417 2.11005 16.3895C2.15796 16.4374 2.21792 16.4713 2.28357 16.4879C2.34922 16.5044 2.41812 16.5028 2.48295 16.4833L5.7477 15.4933C5.98258 15.4219 6.19633 15.2939 6.3702 15.1205L16.3805 5.1088Z" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.75 3.75L14.75 6.75" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <span>Edit Enquiry</span>
                             </a>
                         </div>
                         <div class="col-6 p-0 left">
                             <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.25 2.25H3.75C2.92157 2.25 2.25 2.92157 2.25 3.75V14.25C2.25 15.0784 2.92157 15.75 3.75 15.75H14.25C15.0784 15.75 15.75 15.0784 15.75 14.25V3.75C15.75 2.92157 15.0784 2.25 14.25 2.25Z"
-                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6.75 6H12" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M6 9H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M8.25 12H12" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <circle cx="14.5" cy="3.5" r="3.5" fill="#3F46EE" />
-                                    <path d="M16.1666 2.25L13.875 4.54167L12.8333 3.5" stroke="white" stroke-width="0.6"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <span>Confirmed</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M9.5 12C11.1569 12 12.5 10.6569 12.5 9C12.5 7.34315 11.1569 6 9.5 6C7.84315 6 6.5 7.34315 6.5 9C6.5 10.6569 7.84315 12 9.5 12Z" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.5 6.00001V9.75001C12.5 10.3467 12.7371 10.919 13.159 11.341C13.581 11.763 14.1533 12 14.75 12C15.3467 12 15.919 11.763 16.341 11.341C16.763 10.919 17 10.3467 17 9.75001V9.00001C17 7.31048 16.4296 5.67045 15.3811 4.34563C14.3326 3.02081 12.8675 2.08881 11.2232 1.70064C9.57883 1.31247 7.85161 1.49086 6.32133 2.20692C4.79106 2.92298 3.54738 4.13475 2.79181 5.6459C2.03623 7.15706 1.81302 8.87906 2.15833 10.5329C2.50365 12.1868 3.39727 13.6756 4.6944 14.7581C5.99154 15.8407 7.61619 16.4536 9.30514 16.4975C10.9941 16.5414 12.6484 16.0137 14 15" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <span>Email for update</span>
                             </a>
                         </div>
                         <div class="col-6 p-0 right">
                             <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.5 15C15.8978 15 16.2794 14.842 16.5607 14.5607C16.842 14.2794 17 13.8978 17 13.5V6C17 5.60218 16.842 5.22064 16.5607 4.93934C16.2794 4.65804 15.8978 4.5 15.5 4.5H9.575C9.32414 4.50246 9.07666 4.44196 8.85523 4.32403C8.63379 4.20611 8.44547 4.03453 8.3075 3.825L7.7 2.925C7.56342 2.7176 7.37748 2.54736 7.15887 2.42955C6.94027 2.31174 6.69583 2.25004 6.4475 2.25H3.5C3.10218 2.25 2.72064 2.40804 2.43934 2.68934C2.15804 2.97064 2 3.35218 2 3.75V13.5C2 13.8978 2.15804 14.2794 2.43934 14.5607C2.72064 14.842 3.10218 15 3.5 15H15.5Z"
-                                        stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M9.5 7.5V12" stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M7.25 9.75L9.5 7.5L11.75 9.75" stroke="#3F46EE" stroke-width="1.2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <span>Rig List</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                    <path d="M11.4021 16.2644C11.4306 16.3354 11.4801 16.396 11.5441 16.4381C11.608 16.4801 11.6832 16.5016 11.7597 16.4997C11.8362 16.4977 11.9103 16.4724 11.972 16.4271C12.0337 16.3818 12.08 16.3188 12.1048 16.2464L16.9798 1.99642C17.0039 1.92997 17.0084 1.85805 16.9931 1.78909C16.9777 1.72012 16.943 1.65697 16.893 1.607C16.8431 1.55704 16.7799 1.52234 16.7109 1.50696C16.642 1.49159 16.5701 1.49617 16.5036 1.52017L2.2536 6.39517C2.18122 6.41999 2.11817 6.46636 2.0729 6.52805C2.02764 6.58974 2.00233 6.6638 2.00037 6.74029C1.99841 6.81678 2.01989 6.89204 2.06194 6.95597C2.10399 7.01989 2.16459 7.06943 2.2356 7.09792L8.1831 9.48292C8.37111 9.5582 8.54194 9.67077 8.68527 9.81384C8.82861 9.95692 8.94148 10.1275 9.0171 10.3154L11.4021 16.2644Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.8905 1.61035L8.68555 9.8146" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                <span>Send Quote</span>
                             </a>
                         </div>
                     </div>
@@ -560,7 +531,7 @@
                 <!-- table -->
                 <div class="open-enquiry">
                     <div class="custom-data-table mt-3 p-0 pb-2">
-                        <div class="d-flex justify-content-between p-3">
+                        <div class="d-md-flex justify-content-between p-3">
                             <!-- Search bar on the left -->
                             <div id="datatable_search" class="custom-search-bar"></div>
 
@@ -607,138 +578,436 @@
                         </div>
 
                         <!-- DataTable -->
-                        <table id="openEnquiry" class="table" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th class="checkbox"><input id="check-all" class="form-check-input mt-0"
-                                            type="checkbox" value="" aria-label="Checkbox for following text input">
-                                    </th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Mobile</th>
-                                    <th>Venue</th>
-                                    <th>Event date</th>
-                                    <th class="tell-us-more">Tell us more</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
-                                <tr>
-                                    <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
-                                            value="" aria-label="Checkbox for following text input"></td>
-                                    <td>Jeevan Thind</td>
-                                    <td>jeeves.thind@gmail.com</td>
-                                    <td>079674572237</td>
-                                    <td>Belfry</td>
-                                    <td>02/08/2026</td>
-                                    <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
-                                </tr>
+                        <div class="table-responsive d-none d-md-block">
 
-                                <!-- Add more rows as needed -->
-                            </tbody>
-                        </table>
+                            <table id="openEnquiry" class="table" >
+                                <thead>
+                                    <tr>
+                                        <th class="checkbox"><input id="check-all" class="form-check-input mt-0"
+                                                type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Mobile</th>
+                                        <th>Venue</th>
+                                        <th>Event date</th>
+                                        <th class="tell-us-more">Tell us more</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox"><input class="form-check-input checked mt-0" type="checkbox"
+                                                value="" aria-label="Checkbox for following text input"></td>
+                                        <td>Jeevan Thind</td>
+                                        <td>jeeves.thind@gmail.com</td>
+                                        <td>079674572237</td>
+                                        <td>Belfry</td>
+                                        <td>02/08/2026</td>
+                                        <td class="tell-us-more">Lorem Ipsum is simply dummy typesetting...</td>
+                                    </tr>
+
+                                    <!-- Add more rows as needed -->
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        
+                <div class="mobile-viwe d-block d-md-none">
+                
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="card-mobile-style">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="row">
+                            <div class="col-4">
+                              <div class="value-mobile">
+                                <p class="name-styel">Name</p>
+                                <p class="value">Amarjit Singh</p>
+                              </div>
+                            </div>
+                            <div class="col-8">
+                              <div class="value-mobile">
+                                <p class="name-styel">Email</p>
+                                <p class="value">jeeves.thind@gmail.com</p>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Mobile</p>
+                                <p class="value">079674572237</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Venue</p>
+                                <p class="value">Belfry</p>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Event date</p>
+                                <p class="value">02/08/2026</p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <div class="value-mobile">
+                                <p class="name-styel">Tell us more</p>
+                                <p class="value">Lorem Ipsum is simply dummy typesetting...</p>
+                              </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
                     </div>
                 </div>
                 <!-- table end -->
+
 
                 <div class="container-fluid open-enquiry-bottom mt-3">
                     <div class="row">
@@ -754,6 +1023,7 @@
                                 <ul>
                                     <li>Update email sent - USR Holding Ltd - Created on 15/07/2024, 5:06 pm</li>
                                     <li>Update email sent - Created on 20/05/2024, 3:10 pm</li>
+                                    <li>Brochure email sent - Created on 30/04/2024, 12:59 PM</li>
                                     <li>Brochure email sent - Created on 30/04/2024, 12:59 PM</li>
                                     <li>Brochure email sent - Created on 30/04/2024, 12:59 PM</li>
                                 </ul>
@@ -785,11 +1055,33 @@
                                         </select>
                                     </div>
                                     <div class="mt-1">
+                                        <div class="d-flex  justify-content-between">
+                                            <span>Brochure Emailed?</span>
+                                            <input class="form-check-input mt-0"
+                                            type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
                                         <div class="d-flex justify-content-between">
                                             <span>Brochure Emailed?</span>
                                             <input class="form-check-input mt-0"
                                             type="checkbox" value="" aria-label="Checkbox for following text input">
                                         </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span>Called?</span>
+                                            <input class="form-check-input mt-0"
+                                            type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span>Send media?</span>
+                                            <input class="form-check-input mt-0"
+                                            type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <span>Quoted</span>
+                                            <input class="form-check-input mt-0"
+                                            type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        </div>
+                                        <button class="btn">Add Deposit</button>
+
                                     </div>
                                 </form>
                             </div>
@@ -833,14 +1125,24 @@
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
 
 
-    <script src="assets/js/script.js"></script>
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-
-
+    <!-- Bootstrap Datepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+              $('#datepicker').datepicker({
+                format: "dd/mm/yyyy",
+                todayHighlight: true,
+                autoclose: true
+              });
+            });
+          </script>
     <script>
         // data table JS
 

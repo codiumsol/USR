@@ -2,29 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>USR</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>USR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" />
-
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/4d5fe89baa.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/4d5fe89baa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
 
-    <link rel="stylesheet" href="assets/Css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css" />
+
+<!-- ............................../.datepicker css link..................... -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+<link rel="stylesheet" href="assets/Css/style.css" />
 
 </head>
 
@@ -313,172 +315,201 @@
                         </div>
                     </div>
                     <div class="offcanvas-body">
-                        ...
-                    </div>
+                        <h3 class="text-center Calendar-calss">Calendar</h3>
+                        <div id="datepicker"></div>
+                       <div class="calendar-event-style">
+                         <a href="">Go to calendar</a>
+                         <h3>Upcoming Events</h3>
+                         <div class="d-flex justify-content-between align-items-center  value-data">
+                           <p class=" ">Date</p>
+                           <p class="">Venue</p>
+                           <p class="">Date</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">Name</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">DJ Nicku</p>           
+                         </div>
+                         <div class="d-flex justify-content-between align-items-center Events">
+                           <p class=" ">07/09/24</p>
+                           <p class="">Supreme Venue</p>
+                           <p class="">DJ Nicku</p>           
+                         </div>
+           
+                       </div>
+                       </div>
                     <!-- offcanvas right sidebar end -->
                 </div>
 
                 <!-- top nav bar -->
-                <div class="d-md-flex justify-content-between align-items-center payment-card">
-                    <nav class="navbar navbar-expand-lg p-0 d-lg-none navbar-light pe-2">
-                        <button class="btn px-1 py-0 open-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M21.75 6H2.25C1.85218 6 1.47064 5.84196 1.18934 5.56066C0.908035 5.27936 0.75 4.89782 0.75 4.5C0.75 4.10218 0.908035 3.72064 1.18934 3.43934C1.47064 3.15804 1.85218 3 2.25 3H21.75C22.1478 3 22.5294 3.15804 22.8107 3.43934C23.092 3.72064 23.25 4.10218 23.25 4.5C23.25 4.89782 23.092 5.27936 22.8107 5.56066C22.5294 5.84196 22.1478 6 21.75 6ZM21.75 21H2.25C1.85218 21 1.47064 20.842 1.18934 20.5607C0.908035 20.2794 0.75 19.8978 0.75 19.5C0.75 19.1022 0.908035 18.7206 1.18934 18.4393C1.47064 18.158 1.85218 18 2.25 18H21.75C22.1478 18 22.5294 18.158 22.8107 18.4393C23.092 18.7206 23.25 19.1022 23.25 19.5C23.25 19.8978 23.092 20.2794 22.8107 20.5607C22.5294 20.842 22.1478 21 21.75 21ZM21.75 13.5H2.25C1.85218 13.5 1.47064 13.342 1.18934 13.0607C0.908035 12.7794 0.75 12.3978 0.75 12C0.75 11.6022 0.908035 11.2206 1.18934 10.9393C1.47064 10.658 1.85218 10.5 2.25 10.5H21.75C22.1478 10.5 22.5294 10.658 22.8107 10.9393C23.092 11.2206 23.25 11.6022 23.25 12C23.25 12.3978 23.092 12.7794 22.8107 13.0607C22.5294 13.342 22.1478 13.5 21.75 13.5Z"
-                                    fill="#0A172F" />
-                            </svg>
-                        </button>
-                    </nav>
-                    <h2 class="fs-5 page-heading pb-0">Users</h2>
+                <div class="d-flex align-items-center justify-content-between payment-card">
+                    <div class="d-flex align-items-center">
+                        <nav class="navbar navbar-expand-lg p-0 d-lg-none navbar-light pe-2">
+                            <button class="btn px-1 py-0 open-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.75 6H2.25C1.85218 6 1.47064 5.84196 1.18934 5.56066C0.908035 5.27936 0.75 4.89782 0.75 4.5C0.75 4.10218 0.908035 3.72064 1.18934 3.43934C1.47064 3.15804 1.85218 3 2.25 3H21.75C22.1478 3 22.5294 3.15804 22.8107 3.43934C23.092 3.72064 23.25 4.10218 23.25 4.5C23.25 4.89782 23.092 5.27936 22.8107 5.56066C22.5294 5.84196 22.1478 6 21.75 6ZM21.75 21H2.25C1.85218 21 1.47064 20.842 1.18934 20.5607C0.908035 20.2794 0.75 19.8978 0.75 19.5C0.75 19.1022 0.908035 18.7206 1.18934 18.4393C1.47064 18.158 1.85218 18 2.25 18H21.75C22.1478 18 22.5294 18.158 22.8107 18.4393C23.092 18.7206 23.25 19.1022 23.25 19.5C23.25 19.8978 23.092 20.2794 22.8107 20.5607C22.5294 20.842 22.1478 21 21.75 21ZM21.75 13.5H2.25C1.85218 13.5 1.47064 13.342 1.18934 13.0607C0.908035 12.7794 0.75 12.3978 0.75 12C0.75 11.6022 0.908035 11.2206 1.18934 10.9393C1.47064 10.658 1.85218 10.5 2.25 10.5H21.75C22.1478 10.5 22.5294 10.658 22.8107 10.9393C23.092 11.2206 23.25 11.6022 23.25 12C23.25 12.3978 23.092 12.7794 22.8107 13.0607C22.5294 13.342 22.1478 13.5 21.75 13.5Z"
+                                        fill="#0A172F" />
+                                </svg>
+                            </button>
+                        </nav>
+                        <h2 class="fs-5 page-heading pb-0">Users</h2>
+                    </div>
 
-                    <div class="page-heading-top-button text-end">
+                    <div class="page-heading-top-button d-flex text-end">
+                        <div class="d-none d-lg-block">
 
-                        <a href="#" class="btn btn-outline-primary top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 15.75V14.25C12 13.4544 11.6839 12.6913 11.1213 12.1287C10.5587 11.5661 9.79565 11.25 9 11.25H4.5C3.70435 11.25 2.94129 11.5661 2.37868 12.1287C1.81607 12.6913 1.5 13.4544 1.5 14.25V15.75"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M6.75 8.25C8.40685 8.25 9.75 6.90685 9.75 5.25C9.75 3.59315 8.40685 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25C3.75 6.90685 5.09315 8.25 6.75 8.25Z"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M16.5 15.75V14.25C16.4995 13.5853 16.2783 12.9396 15.871 12.4142C15.4638 11.8889 14.8936 11.5136 14.25 11.3475"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M12 2.34747C12.6453 2.5127 13.2173 2.888 13.6257 3.41421C14.0342 3.94041 14.2559 4.5876 14.2559 5.25372C14.2559 5.91985 14.0342 6.56703 13.6257 7.09324C13.2173 7.61945 12.6453 7.99475 12 8.15997"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            Clients
-                        </a>
-                        <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_525_8784)">
+                            <a href="#" class="btn btn-outline-primary top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M4.5 16.5V3C4.5 2.60218 4.65804 2.22064 4.93934 1.93934C5.22064 1.65804 5.60218 1.5 6 1.5H12C12.3978 1.5 12.7794 1.65804 13.0607 1.93934C13.342 2.22064 13.5 2.60218 13.5 3V16.5H4.5Z"
+                                        d="M12 15.75V14.25C12 13.4544 11.6839 12.6913 11.1213 12.1287C10.5587 11.5661 9.79565 11.25 9 11.25H4.5C3.70435 11.25 2.94129 11.5661 2.37868 12.1287C1.81607 12.6913 1.5 13.4544 1.5 14.25V15.75"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                     <path
-                                        d="M4.5 9H3C2.60218 9 2.22064 9.15804 1.93934 9.43934C1.65804 9.72064 1.5 10.1022 1.5 10.5V15C1.5 15.3978 1.65804 15.7794 1.93934 16.0607C2.22064 16.342 2.60218 16.5 3 16.5H4.5"
+                                        d="M6.75 8.25C8.40685 8.25 9.75 6.90685 9.75 5.25C9.75 3.59315 8.40685 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25C3.75 6.90685 5.09315 8.25 6.75 8.25Z"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                     <path
-                                        d="M13.5 6.75H15C15.3978 6.75 15.7794 6.90804 16.0607 7.18934C16.342 7.47064 16.5 7.85218 16.5 8.25V15C16.5 15.3978 16.342 15.7794 16.0607 16.0607C15.7794 16.342 15.3978 16.5 15 16.5H13.5"
+                                        d="M16.5 15.75V14.25C16.4995 13.5853 16.2783 12.9396 15.871 12.4142C15.4638 11.8889 14.8936 11.5136 14.25 11.3475"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M7.5 4.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M7.5 7.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M7.5 10.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M7.5 13.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_525_8784">
-                                        <rect width="18" height="18" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Venues
-                        </a>
-                        <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_525_8808)">
                                     <path
-                                        d="M16.5 5.77499C16.5 5.32499 16.2 4.87499 15.9 4.64999L11.175 1.72499C10.9807 1.61453 10.761 1.55646 10.5375 1.55646C10.314 1.55646 10.0943 1.61453 9.9 1.72499L2.175 6.22499C1.8 6.37499 1.5 6.82499 1.5 7.27499V12.225C1.5 12.6 1.8 13.125 2.1 13.35L6.825 16.275C7.01931 16.3854 7.23899 16.4435 7.4625 16.4435C7.68601 16.4435 7.90569 16.3854 8.1 16.275L15.825 11.775C16.2 11.55 16.5 11.025 16.5 10.65V5.77499Z"
+                                        d="M12 2.34747C12.6453 2.5127 13.2173 2.888 13.6257 3.41421C14.0342 3.94041 14.2559 4.5876 14.2559 5.25372C14.2559 5.91985 14.0342 6.56703 13.6257 7.09324C13.2173 7.61945 12.6453 7.99475 12 8.15997"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M7.5002 16.425V10.5L1.5752 6.82501" stroke="#3F46EE" stroke-width="1.25"
+                                </svg>
+                                Clients
+                            </a>
+                            <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_525_8784)">
+                                        <path
+                                            d="M4.5 16.5V3C4.5 2.60218 4.65804 2.22064 4.93934 1.93934C5.22064 1.65804 5.60218 1.5 6 1.5H12C12.3978 1.5 12.7794 1.65804 13.0607 1.93934C13.342 2.22064 13.5 2.60218 13.5 3V16.5H4.5Z"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M4.5 9H3C2.60218 9 2.22064 9.15804 1.93934 9.43934C1.65804 9.72064 1.5 10.1022 1.5 10.5V15C1.5 15.3978 1.65804 15.7794 1.93934 16.0607C2.22064 16.342 2.60218 16.5 3 16.5H4.5"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5 6.75H15C15.3978 6.75 15.7794 6.90804 16.0607 7.18934C16.342 7.47064 16.5 7.85218 16.5 8.25V15C16.5 15.3978 16.342 15.7794 16.0607 16.0607C15.7794 16.342 15.3978 16.5 15 16.5H13.5"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 4.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 7.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 10.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5 13.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_525_8784">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Venues
+                            </a>
+                            <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_525_8808)">
+                                        <path
+                                            d="M16.5 5.77499C16.5 5.32499 16.2 4.87499 15.9 4.64999L11.175 1.72499C10.9807 1.61453 10.761 1.55646 10.5375 1.55646C10.314 1.55646 10.0943 1.61453 9.9 1.72499L2.175 6.22499C1.8 6.37499 1.5 6.82499 1.5 7.27499V12.225C1.5 12.6 1.8 13.125 2.1 13.35L6.825 16.275C7.01931 16.3854 7.23899 16.4435 7.4625 16.4435C7.68601 16.4435 7.90569 16.3854 8.1 16.275L15.825 11.775C16.2 11.55 16.5 11.025 16.5 10.65V5.77499Z"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.5002 16.425V10.5L1.5752 6.82501" stroke="#3F46EE" stroke-width="1.25"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 10.5L16.425 5.32501" stroke="#3F46EE" stroke-width="1.25"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.5 14.85V8.77502" stroke="#3F46EE" stroke-width="1.25"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.5 13.125V7.04999" stroke="#3F46EE" stroke-width="1.25"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_525_8808">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Suppliers
+                            </a>
+                            <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#createPackage">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.625 3.20251L12.375 7.06501" stroke="#3F46EE" stroke-width="1.25"
                                         stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M7.5 10.5L16.425 5.32501" stroke="#3F46EE" stroke-width="1.25"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10.5 14.85V8.77502" stroke="#3F46EE" stroke-width="1.25"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M13.5 13.125V7.04999" stroke="#3F46EE" stroke-width="1.25"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_525_8808">
-                                        <rect width="18" height="18" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Suppliers
-                        </a>
-                        <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#createPackage">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.625 3.20251L12.375 7.06501" stroke="#3F46EE" stroke-width="1.25"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M15.75 5.99999C15.7497 5.73694 15.6803 5.4786 15.5487 5.25086C15.417 5.02312 15.2278 4.83401 15 4.70249L9.75 1.70249C9.52197 1.57084 9.2633 1.50153 9 1.50153C8.7367 1.50153 8.47803 1.57084 8.25 1.70249L3 4.70249C2.7722 4.83401 2.58299 5.02312 2.45135 5.25086C2.31971 5.4786 2.25027 5.73694 2.25 5.99999V12C2.25027 12.263 2.31971 12.5214 2.45135 12.7491C2.58299 12.9769 2.7722 13.166 3 13.2975L8.25 16.2975C8.47803 16.4291 8.7367 16.4985 9 16.4985C9.2633 16.4985 9.52197 16.4291 9.75 16.2975L15 13.2975C15.2278 13.166 15.417 12.9769 15.5487 12.7491C15.6803 12.5214 15.7497 12.263 15.75 12V5.99999Z"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M2.47461 5.25L8.99961 9L15.5246 5.25" stroke="#3F46EE" stroke-width="1.25"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M9 16.5V9" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            Packages
-                        </a>
-                        <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#update-company">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 9H9.0075" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M12 4.5V3C12 2.60218 11.842 2.22064 11.5607 1.93934C11.2794 1.65804 10.8978 1.5 10.5 1.5H7.5C7.10218 1.5 6.72064 1.65804 6.43934 1.93934C6.15804 2.22064 6 2.60218 6 3V4.5"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M16.5 9.75C14.2746 11.2192 11.6667 12.0025 9 12.0025C6.33334 12.0025 3.72541 11.2192 1.5 9.75"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M15 4.5H3C2.17157 4.5 1.5 5.17157 1.5 6V13.5C1.5 14.3284 2.17157 15 3 15H15C15.8284 15 16.5 14.3284 16.5 13.5V6C16.5 5.17157 15.8284 4.5 15 4.5Z"
-                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            Company
-                        </a>
-                        <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
-                            data-bs-target="#">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_525_8794)">
                                     <path
-                                        d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
+                                        d="M15.75 5.99999C15.7497 5.73694 15.6803 5.4786 15.5487 5.25086C15.417 5.02312 15.2278 4.83401 15 4.70249L9.75 1.70249C9.52197 1.57084 9.2633 1.50153 9 1.50153C8.7367 1.50153 8.47803 1.57084 8.25 1.70249L3 4.70249C2.7722 4.83401 2.58299 5.02312 2.45135 5.25086C2.31971 5.4786 2.25027 5.73694 2.25 5.99999V12C2.25027 12.263 2.31971 12.5214 2.45135 12.7491C2.58299 12.9769 2.7722 13.166 3 13.2975L8.25 16.2975C8.47803 16.4291 8.7367 16.4985 9 16.4985C9.2633 16.4985 9.52197 16.4291 9.75 16.2975L15 13.2975C15.2278 13.166 15.417 12.9769 15.5487 12.7491C15.6803 12.5214 15.7497 12.263 15.75 12V5.99999Z"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M2.47461 5.25L8.99961 9L15.5246 5.25" stroke="#3F46EE" stroke-width="1.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9 16.5V9" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Packages
+                            </a>
+                            <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#update-company">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 9H9.0075" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 4.5V3C12 2.60218 11.842 2.22064 11.5607 1.93934C11.2794 1.65804 10.8978 1.5 10.5 1.5H7.5C7.10218 1.5 6.72064 1.65804 6.43934 1.93934C6.15804 2.22064 6 2.60218 6 3V4.5"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                     <path
-                                        d="M12 6.00001V9.75001C12 10.3467 12.2371 10.919 12.659 11.341C13.081 11.763 13.6533 12 14.25 12C14.8467 12 15.419 11.763 15.841 11.341C16.263 10.919 16.5 10.3467 16.5 9.75001V9.00001C16.5 7.31048 15.9296 5.67045 14.8811 4.34563C13.8326 3.02081 12.3675 2.08881 10.7232 1.70064C9.07883 1.31247 7.35161 1.49086 5.82133 2.20692C4.29106 2.92298 3.04738 4.13475 2.29181 5.6459C1.53623 7.15706 1.31302 8.87906 1.65833 10.5329C2.00365 12.1868 2.89727 13.6756 4.1944 14.7581C5.49154 15.8407 7.11619 16.4536 8.80514 16.4975C10.4941 16.5414 12.1484 16.0137 13.5 15"
+                                        d="M16.5 9.75C14.2746 11.2192 11.6667 12.0025 9 12.0025C6.33334 12.0025 3.72541 11.2192 1.5 9.75"
                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_525_8794">
-                                        <rect width="18" height="18" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Email
-                        </a>
+                                    <path
+                                        d="M15 4.5H3C2.17157 4.5 1.5 5.17157 1.5 6V13.5C1.5 14.3284 2.17157 15 3 15H15C15.8284 15 16.5 14.3284 16.5 13.5V6C16.5 5.17157 15.8284 4.5 15 4.5Z"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Company
+                            </a>
+                            <a href="#" class="btn btn-outline-primary ms-2 top-nav-btn" data-bs-toggle="modal"
+                                data-bs-target="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_525_8794)">
+                                        <path
+                                            d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 6.00001V9.75001C12 10.3467 12.2371 10.919 12.659 11.341C13.081 11.763 13.6533 12 14.25 12C14.8467 12 15.419 11.763 15.841 11.341C16.263 10.919 16.5 10.3467 16.5 9.75001V9.00001C16.5 7.31048 15.9296 5.67045 14.8811 4.34563C13.8326 3.02081 12.3675 2.08881 10.7232 1.70064C9.07883 1.31247 7.35161 1.49086 5.82133 2.20692C4.29106 2.92298 3.04738 4.13475 2.29181 5.6459C1.53623 7.15706 1.31302 8.87906 1.65833 10.5329C2.00365 12.1868 2.89727 13.6756 4.1944 14.7581C5.49154 15.8407 7.11619 16.4536 8.80514 16.4975C10.4941 16.5414 12.1484 16.0137 13.5 15"
+                                            stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_525_8794">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                Email
+                            </a>
 
-
+                        </div>
 
                         <!-- ...............rigth side icon button. -->
                         <span class="sidebar-toggle">
@@ -522,95 +553,172 @@
             <!-- main content -->
              <div class="main-content">
                  <!-- mobile view buttons -->
-                 <div class="top-mobile-buttons d-md-none">
+                 <div class="top-mobile-buttons d-lg-none">
                      <div class="row m-0">
                          <div class="col-6 p-0 left">
                              <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <path
-                                         d="M16.5 9.75V4.5C16.5 4.10218 16.342 3.72064 16.0607 3.43934C15.7794 3.15804 15.3978 3 15 3H3C2.60218 3 2.22064 3.15804 1.93934 3.43934C1.65804 3.72064 1.5 4.10218 1.5 4.5V13.5C1.5 14.325 2.175 15 3 15H9"
-                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path
-                                         d="M16.5 5.25L9.7725 9.525C9.54095 9.67007 9.27324 9.74701 9 9.74701C8.72676 9.74701 8.45905 9.67007 8.2275 9.525L1.5 5.25"
-                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M14.25 12V16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M12 14.25H16.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                 </svg>
-                                 <span>New Enquiry</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 15.75V14.25C12 13.4544 11.6839 12.6913 11.1213 12.1287C10.5587 11.5661 9.79565 11.25 9 11.25H4.5C3.70435 11.25 2.94129 11.5661 2.37868 12.1287C1.81607 12.6913 1.5 13.4544 1.5 14.25V15.75"
+                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.75 8.25C8.40685 8.25 9.75 6.90685 9.75 5.25C9.75 3.59315 8.40685 2.25 6.75 2.25C5.09315 2.25 3.75 3.59315 3.75 5.25C3.75 6.90685 5.09315 8.25 6.75 8.25Z"
+                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M16.5 15.75V14.25C16.4995 13.5853 16.2783 12.9396 15.871 12.4142C15.4638 11.8889 14.8936 11.5136 14.25 11.3475"
+                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12 2.34747C12.6453 2.5127 13.2173 2.888 13.6257 3.41421C14.0342 3.94041 14.2559 4.5876 14.2559 5.25372C14.2559 5.91985 14.0342 6.56703 13.6257 7.09324C13.2173 7.61945 12.6453 7.99475 12 8.15997"
+                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            
+                                 <span>Clients</span>
                              </a>
                          </div>
                          <div class="col-6 p-0 right">
                              <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <g clip-path="url(#clip0_105_15030)">
-                                         <path
-                                             d="M15.9 6.3C16.275 6.585 16.5 7.0275 16.5 7.5V15C16.5 15.3978 16.342 15.7794 16.0607 16.0607C15.7794 16.342 15.3978 16.5 15 16.5H3C2.60218 16.5 2.22064 16.342 1.93934 16.0607C1.65804 15.7794 1.5 15.3978 1.5 15V7.5C1.5 7.26713 1.55422 7.03746 1.65836 6.82918C1.7625 6.6209 1.91371 6.43972 2.1 6.3L8.1 1.8C8.35964 1.60527 8.67544 1.5 9 1.5C9.32456 1.5 9.64036 1.60527 9.9 1.8L15.9 6.3Z"
-                                             stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                             stroke-linejoin="round" />
-                                         <path
-                                             d="M16.5 7.5L9.7725 11.775C9.54095 11.9201 9.27324 11.997 9 11.997C8.72676 11.997 8.45905 11.9201 8.2275 11.775L1.5 7.5"
-                                             stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                             stroke-linejoin="round" />
-                                     </g>
-                                     <defs>
-                                         <clipPath id="clip0_105_15030">
-                                             <rect width="18" height="18" fill="white" />
-                                         </clipPath>
-                                     </defs>
-                                 </svg>
-                                 <span>Open Enquiries</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_525_8784)">
+                                    <path
+                                        d="M4.5 16.5V3C4.5 2.60218 4.65804 2.22064 4.93934 1.93934C5.22064 1.65804 5.60218 1.5 6 1.5H12C12.3978 1.5 12.7794 1.65804 13.0607 1.93934C13.342 2.22064 13.5 2.60218 13.5 3V16.5H4.5Z"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M4.5 9H3C2.60218 9 2.22064 9.15804 1.93934 9.43934C1.65804 9.72064 1.5 10.1022 1.5 10.5V15C1.5 15.3978 1.65804 15.7794 1.93934 16.0607C2.22064 16.342 2.60218 16.5 3 16.5H4.5"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M13.5 6.75H15C15.3978 6.75 15.7794 6.90804 16.0607 7.18934C16.342 7.47064 16.5 7.85218 16.5 8.25V15C16.5 15.3978 16.342 15.7794 16.0607 16.0607C15.7794 16.342 15.3978 16.5 15 16.5H13.5"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 4.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 7.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 10.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 13.5H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_525_8784">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            
+                                 <span>Venues</span>
                              </a>
                          </div>
                          <div class="col-6 p-0 left">
                              <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <path
-                                         d="M14.25 2.25H3.75C2.92157 2.25 2.25 2.92157 2.25 3.75V14.25C2.25 15.0784 2.92157 15.75 3.75 15.75H14.25C15.0784 15.75 15.75 15.0784 15.75 14.25V3.75C15.75 2.92157 15.0784 2.25 14.25 2.25Z"
-                                         stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M6.75 6H12" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M6 9H10.5" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M8.25 12H12" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <circle cx="14.5" cy="3.5" r="3.5" fill="#3F46EE" />
-                                     <path d="M16.1666 2.25L13.875 4.54167L12.8333 3.5" stroke="white" stroke-width="0.6"
-                                         stroke-linecap="round" stroke-linejoin="round" />
-                                 </svg>
-                                 <span>Confirmed</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 9H9.0075" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 4.5V3C12 2.60218 11.842 2.22064 11.5607 1.93934C11.2794 1.65804 10.8978 1.5 10.5 1.5H7.5C7.10218 1.5 6.72064 1.65804 6.43934 1.93934C6.15804 2.22064 6 2.60218 6 3V4.5"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M16.5 9.75C14.2746 11.2192 11.6667 12.0025 9 12.0025C6.33334 12.0025 3.72541 11.2192 1.5 9.75"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M15 4.5H3C2.17157 4.5 1.5 5.17157 1.5 6V13.5C1.5 14.3284 2.17157 15 3 15H15C15.8284 15 16.5 14.3284 16.5 13.5V6C16.5 5.17157 15.8284 4.5 15 4.5Z"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                
+                                
+                                 <span>Company</span>
                              </a>
                          </div>
                          <div class="col-6 p-0 right">
                              <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
-                                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                     <path
-                                         d="M15.5 15C15.8978 15 16.2794 14.842 16.5607 14.5607C16.842 14.2794 17 13.8978 17 13.5V6C17 5.60218 16.842 5.22064 16.5607 4.93934C16.2794 4.65804 15.8978 4.5 15.5 4.5H9.575C9.32414 4.50246 9.07666 4.44196 8.85523 4.32403C8.63379 4.20611 8.44547 4.03453 8.3075 3.825L7.7 2.925C7.56342 2.7176 7.37748 2.54736 7.15887 2.42955C6.94027 2.31174 6.69583 2.25004 6.4475 2.25H3.5C3.10218 2.25 2.72064 2.40804 2.43934 2.68934C2.15804 2.97064 2 3.35218 2 3.75V13.5C2 13.8978 2.15804 14.2794 2.43934 14.5607C2.72064 14.842 3.10218 15 3.5 15H15.5Z"
-                                         stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M9.5 7.5V12" stroke="#3F46EE" stroke-width="1.2" stroke-linecap="round"
-                                         stroke-linejoin="round" />
-                                     <path d="M7.25 9.75L9.5 7.5L11.75 9.75" stroke="#3F46EE" stroke-width="1.2"
-                                         stroke-linecap="round" stroke-linejoin="round" />
-                                 </svg>
-                                 <span>Rig List</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.625 3.20251L12.375 7.06501" stroke="#3F46EE" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.75 5.99999C15.7497 5.73694 15.6803 5.4786 15.5487 5.25086C15.417 5.02312 15.2278 4.83401 15 4.70249L9.75 1.70249C9.52197 1.57084 9.2633 1.50153 9 1.50153C8.7367 1.50153 8.47803 1.57084 8.25 1.70249L3 4.70249C2.7722 4.83401 2.58299 5.02312 2.45135 5.25086C2.31971 5.4786 2.25027 5.73694 2.25 5.99999V12C2.25027 12.263 2.31971 12.5214 2.45135 12.7491C2.58299 12.9769 2.7722 13.166 3 13.2975L8.25 16.2975C8.47803 16.4291 8.7367 16.4985 9 16.4985C9.2633 16.4985 9.52197 16.4291 9.75 16.2975L15 13.2975C15.2278 13.166 15.417 12.9769 15.5487 12.7491C15.6803 12.5214 15.7497 12.263 15.75 12V5.99999Z"
+                                    stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.47461 5.25L8.99961 9L15.5246 5.25" stroke="#3F46EE" stroke-width="1.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 16.5V9" stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            
+                                 <span>Packages</span>
                              </a>
                          </div>
+                         <div class="col-6 p-0 left">
+                            <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
+                               <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <g clip-path="url(#clip0_525_8808)">
+                                       <path
+                                           d="M16.5 5.77499C16.5 5.32499 16.2 4.87499 15.9 4.64999L11.175 1.72499C10.9807 1.61453 10.761 1.55646 10.5375 1.55646C10.314 1.55646 10.0943 1.61453 9.9 1.72499L2.175 6.22499C1.8 6.37499 1.5 6.82499 1.5 7.27499V12.225C1.5 12.6 1.8 13.125 2.1 13.35L6.825 16.275C7.01931 16.3854 7.23899 16.4435 7.4625 16.4435C7.68601 16.4435 7.90569 16.3854 8.1 16.275L15.825 11.775C16.2 11.55 16.5 11.025 16.5 10.65V5.77499Z"
+                                           stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                           stroke-linejoin="round" />
+                                       <path d="M7.5002 16.425V10.5L1.5752 6.82501" stroke="#3F46EE" stroke-width="1.25"
+                                           stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M7.5 10.5L16.425 5.32501" stroke="#3F46EE" stroke-width="1.25"
+                                           stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M10.5 14.85V8.77502" stroke="#3F46EE" stroke-width="1.25"
+                                           stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M13.5 13.125V7.04999" stroke="#3F46EE" stroke-width="1.25"
+                                           stroke-linecap="round" stroke-linejoin="round" />
+                                   </g>
+                                   <defs>
+                                       <clipPath id="clip0_525_8808">
+                                           <rect width="18" height="18" fill="white" />
+                                       </clipPath>
+                                   </defs>
+                               </svg>
+                               
+                                <span>Suppliers</span>
+                            </a>
+                        </div>
+                        <div class="col-6 p-0 right">
+                            <a href="#" class="btn btn-outline-primary w-100 top-nav-btn justify-content-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_525_8794)">
+                                    <path
+                                        d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12Z"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 6.00001V9.75001C12 10.3467 12.2371 10.919 12.659 11.341C13.081 11.763 13.6533 12 14.25 12C14.8467 12 15.419 11.763 15.841 11.341C16.263 10.919 16.5 10.3467 16.5 9.75001V9.00001C16.5 7.31048 15.9296 5.67045 14.8811 4.34563C13.8326 3.02081 12.3675 2.08881 10.7232 1.70064C9.07883 1.31247 7.35161 1.49086 5.82133 2.20692C4.29106 2.92298 3.04738 4.13475 2.29181 5.6459C1.53623 7.15706 1.31302 8.87906 1.65833 10.5329C2.00365 12.1868 2.89727 13.6756 4.1944 14.7581C5.49154 15.8407 7.11619 16.4536 8.80514 16.4975C10.4941 16.5414 12.1484 16.0137 13.5 15"
+                                        stroke="#3F46EE" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_525_8794">
+                                        <rect width="18" height="18" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            
+                           
+                                <span>Email</span>
+                            </a>
+                        </div>
                      </div>
                  </div>
      
                  <!-- mobile view buttons ends -->
                  <div class="users">
                      <div class="custom-data-table mt-3 p-0 pb-2">
-                         <div class="d-flex justify-content-between p-3">
+                         <div class="d-md-flex justify-content-between p-3">
                              <!-- Search bar on the left -->
                              <div id="datatable_search" class="custom-search-bar"></div>
      
@@ -1339,17 +1447,41 @@
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
 
 
-    <script src="assets/js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
 
-
-
-    <script>
-
-    </script>
+        <!-- Bootstrap Datepicker JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('#datepicker').datepicker({
+              format: "dd/mm/yyyy",
+              todayHighlight: true,
+              autoclose: true
+            });
+          });
+        </script>
+           <script>
+            function toggleOffcanvasClass() {
+              var offcanvasElement = document.getElementById('offcanvasRight');
+      
+              if (window.innerWidth <= 600) { // Mobile screen size (600px and below)
+                offcanvasElement.classList.remove('offcanvas-end');
+                offcanvasElement.classList.add('offcanvas-bottom');
+              } else { // For larger screens
+                offcanvasElement.classList.remove('offcanvas-bottom');
+                offcanvasElement.classList.add('offcanvas-end');
+              }
+            }
+      
+            // Call the function on window resize and when the page loads
+            window.addEventListener('resize', toggleOffcanvasClass);
+            window.addEventListener('load', toggleOffcanvasClass);
+      
+          </script>
 </body>
 
 </html>

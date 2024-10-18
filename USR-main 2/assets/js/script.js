@@ -79,3 +79,21 @@ document.getElementById('check-all').addEventListener('click', function() {
         checkbox.checked = this.checked; // Set each checkbox to the same state as 'Select All'
     }, this);
 });
+
+
+
+function toggleOffcanvasClass() {
+    var offcanvasElement = document.getElementById('offcanvasRight');
+
+    if (window.innerWidth <= 600) { // Mobile screen size (600px and below)
+      offcanvasElement.classList.remove('offcanvas-end');
+      offcanvasElement.classList.add('offcanvas-bottom');
+    } else { // For larger screens
+      offcanvasElement.classList.remove('offcanvas-bottom');
+      offcanvasElement.classList.add('offcanvas-end');
+    }
+  }
+
+  // Call the function on window resize and when the page loads
+  window.addEventListener('resize', toggleOffcanvasClass);
+  window.addEventListener('load', toggleOffcanvasClass);
